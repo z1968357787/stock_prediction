@@ -1,10 +1,10 @@
 from models import TransAm,MLP,MLP2,MLP3,LSTM,GRU,RNN
 import datetime
 import torch
-dataset_select=10
+dataset_select=0
 datasets=['000615-data.csv','000628-data.csv','000629-data.csv','000635-data.csv','000659-data.csv','000663-data.csv','000665-data.csv','000666-data.csv','000670-data.csv','000679-data.csv','000680-data.csv']
 dataset=datasets[dataset_select]
-model_select=6
+model_select=0
 model_names=['TransAm','MLP','MLP2','MLP3','LSTM','GRU','RNN']
 model_name= model_names[model_select]
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
