@@ -37,6 +37,6 @@ c = (
     .add_yaxis("RNN_Predict", RNN_val,label_opts=opts.LabelOpts(is_show=False),color="pink")
     .add_yaxis("TransAm_Predict", TransAm_val,label_opts=opts.LabelOpts(is_show=False),symbol = "cube",color="black")
     .set_global_opts(title_opts=opts.TitleOpts(title=""))
-    .render(f"./Django/Web/user_manage/generator/cmp_{dataset}.html")
+    .render(f"./Django/Web/user_manage/templates/cmp_{dataset}.html")
 )
 #print(Faker.choose())

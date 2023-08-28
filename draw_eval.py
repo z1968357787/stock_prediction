@@ -103,4 +103,4 @@ tl.add(c, "R2")
 
 
     #print(type(bar))
-tl.render(f"./Django/Web/user_manage/generator/eval_all_{dataset}.html")
+tl.render(f"./Django/Web/user_manage/templates/eval_all_{dataset}.html")

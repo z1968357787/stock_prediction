@@ -602,7 +602,7 @@ class Stock:
             grid_opts=opts.GridOpts(pos_left="10%", pos_right="10%", pos_top="75%", height="16%"),
         )
         #print("已保存文件至{}".format("{}-{}.html".format(self.code[0:6], self.name)))
-        grid_chart.render(path = "./Django/Web/user_manage/generator/{}.html".format(self.code[0:6]))
+        grid_chart.render(path = "./Django/Web/user_manage/templates/{}.html".format(self.code[0:6]))
         import os
         print("已保存文件至{}".format("{}-{}.html".format(self.code[0:6],self.name)))
         # os.system("start C:/Users/***/Desktop/pyecharts-{}-{}.html".format(self.code[0:6],self.name))
@@ -705,6 +705,7 @@ class ExcelWriter:
  
 if __name__ == '__main__':
     returnList = []
+    #codeList = ["000615"]
     codeList = ["000615","000628","000629","000635","000659","000663","000665","000666","000670","000679","000680"]
     #with open("C:/Users/***/Desktop/StockAnalysis/code.txt", 'r') as file:
     #    data = file.readlines()

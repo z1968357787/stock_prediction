@@ -126,6 +126,6 @@ l7 = Liquid(init_opts=opts.InitOpts(width=width, height=height)).add(
     ),
 )
 grid = Grid(init_opts=opts.InitOpts(width="1300px", height="300px")).add(l1, grid_opts=opts.GridOpts()).add(l2, grid_opts=opts.GridOpts()).add(l3, grid_opts=opts.GridOpts()).add(l4, grid_opts=opts.GridOpts()).add(l5, grid_opts=opts.GridOpts()).add(l6, grid_opts=opts.GridOpts()).add(l7, grid_opts=opts.GridOpts())
-grid.render(f"./Django/Web/user_manage/generator/time_{dataset}.html")
+grid.render(f"./Django/Web/user_manage/templates/time_{dataset}.html")
 # grid = Grid(init_opts=opts.InitOpts(width="600px", height="400px")).add(l3, grid_opts=opts.GridOpts()).add(l4, grid_opts=opts.GridOpts())
 # grid.render("./Django/Web/user_manage/time_2.html")
